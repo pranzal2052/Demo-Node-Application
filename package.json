@@ -14,6 +14,19 @@
     "start": "node server.js",
     "test": "node test.js"
   },
-  "author": "Misael Matamoros",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mismatso/simple-demo-node-app.git"
+  },
+  "keywords": [
+    "node.js",
+    "demo",
+    "simple"
+  ],
+  "author": "Misael Matamoros <mismatso@gmail.com> (https://gitlab.com/mismatso)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/mismatso/simple-demo-node-app/issues"
+  },
+  "homepage": "https://gitlab.com/mismatso/simple-demo-node-app#readme"
 }
