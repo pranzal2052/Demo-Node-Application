@@ -29,8 +29,8 @@ pipeline{
                           remote = [:]
                           remote.name = '3.110.86.83'
                           remote.host = '3.110.86.83'
-                          remote.user = $USER
-                          remote.identity = $KEY
+                          remote.user = '$USER'
+                          remote.identity = '$KEY'
                           remote.allowAnyHosts = true
                         sshcommand remote:remote , command: "docker pull pranzal/node"
                         sshcommand remote:remote , command: "docker run -p 3000:3000 -d pranzal/node"
