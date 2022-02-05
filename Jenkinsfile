@@ -26,8 +26,8 @@ pipeline{
                 milestone(1)
                 withCredentials([usernamePassword(credentialsId: 'webserver_login' ,keyFileVariable: 'KEY',usernameVariable: 'USER')]){
                     script{
-                        sh 'ssh -i $KEY $USER@${env.prod_ip} \ "docker pull pranzal/node\"'
-                        sh 'ssh -i $KEY $USER@${env.prod_ip} \ "docker run -p 3000:3000 -d pranzal/node\"'
+                        sh 'ssh -i $KEY $USER@${env.prod_ip} \ "docker pull pranzal/node"'
+                        sh 'ssh -i $KEY $USER@${env.prod_ip} \ "docker run -p 3000:3000 -d pranzal/node"'
                     }
                 }
                                  }
