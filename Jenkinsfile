@@ -4,10 +4,7 @@ pipeline{
         stage('Build Docker Image'){
             steps{
                 script{
-                    app=docker.build(pranzal/node)
-                    app.inside{
-                        sh 'echo$(curl localhost:8080)' 
-                    }
+                    app=docker.build("pranzal/node")
                     
                 }
             }
