@@ -33,7 +33,7 @@ pipeline{
                           remote.identityFile = KEY
                           remote.allowAnyHosts = true
                         sshCommand remote: remote , command: "docker pull pranzal/node"
-                        sshCommand remote: remote , command: "docker run -p 3000:3000 -d pranzal/node"
+                        sshCommand remote: remote , command: "docker run -p 80:80 -d pranzal/node"
                     }
                 }
                                  }
