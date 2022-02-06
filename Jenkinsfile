@@ -27,8 +27,8 @@ pipeline{
                 withCredentials([sshUserPrivateKey(credentialsId: 'webserver_login' ,keyFileVariable: 'KEY',usernameVariable: 'USER')]){
                     script{
                           remote = [:]
-                          remote.name = '3.110.86.83'
-                          remote.host = '3.110.86.83'
+                          remote.name = '13.233.123.32'
+                          remote.host = '13.233.123.32'
                           remote.user = USER
                           remote.identityFile = KEY
                           remote.allowAnyHosts = true
